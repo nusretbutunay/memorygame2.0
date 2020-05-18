@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+.nav {
+  background-color: #333;
+}
+
+.nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 7px 0;
+  color: #fff;
+}
+
+.nav .nav-links .nav-item .nav-link {
+  cursor: pointer;
+}
+
+.nav .nav-links .nav-item .nav-link::before {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 0;
+  height: 2px;
+  display: block;
+  content: "";
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}
+
+.nav .nav-links .nav-item .nav-link:hover {
+  position: relative;
+  color: #cd3500;
+  width: 0;
+}
+
+.nav .nav-links .nav-item .nav-link:hover::before {
+  content: "";
+  position: absolute;
+  border-top: #cd3500 2px solid;
+  width: 100%;
+}
+
+.game-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: wheat;
+}
+
+.game-container .cards {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.game-container .cards .card {
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.game-container .cards .card:hover {
+  color: black;
+}
+
+.game-container .cards .card .card-front {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.game-container .cards .card .card-front img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.game-container .cards .card .card-back {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.game-container .cards .card .card-back img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.open {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: #cd3500;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 80vw;
+  height: 75vh;
+  -webkit-box-shadow: white;
+          box-shadow: white;
+  -webkit-box-shadow: 0px 0px 40px 5px black;
+          box-shadow: 0px 0px 40px 5px black;
+  position: relative;
+}
