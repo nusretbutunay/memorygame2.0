@@ -32,9 +32,12 @@
 
       .card-front {
         position: absolute;
+        display: flex;
         width: 90%;
         height: 80%;
         backface-visibility: hidden;
+        justify-content: center;
+        align-items: center;
 
         img {
           max-width: 100%;
@@ -42,6 +45,9 @@
         }
       }
       .card-back {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: absolute;
         width: 90%;
         height: 80%;
