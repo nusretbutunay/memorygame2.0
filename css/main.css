@@ -31,14 +31,14 @@
 
 .nav .nav-links .nav-item .nav-link:hover {
   position: relative;
-  color: #cd3500;
+  color: #c2bec1;
   width: 0;
 }
 
 .nav .nav-links .nav-item .nav-link:hover::before {
   content: "";
   position: absolute;
-  border-top: #cd3500 2px solid;
+  border-top: #c2bec1 2px solid;
   width: 100%;
 }
 
@@ -49,7 +49,7 @@
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: wheat;
+  background-color: #c7831c;
 }
 
 .game-container .cards {
@@ -61,8 +61,8 @@
   display: grid;
   -ms-grid-columns: (auto)[4];
       grid-template-columns: repeat(4, auto);
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
+  -webkit-perspective: 2000px;
+          perspective: 2000px;
 }
 
 .game-container .cards .card {
@@ -130,11 +130,6 @@
           transform: rotateY(180deg);
 }
 
-.game-container .cards .card .card-back img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 .open {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -154,7 +149,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-color: #cd3500;
+  background-color: #c2bec1;
   height: 100vh;
   width: 100vw;
   display: -webkit-box;
@@ -171,7 +166,7 @@ body {
 .wrapper {
   position: relative;
   margin: 0 auto;
-  width: 80vw;
+  width: 400px;
   height: 75vh;
   -webkit-box-shadow: white;
           box-shadow: white;

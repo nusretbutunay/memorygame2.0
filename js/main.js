@@ -1,15 +1,26 @@
-const card = document.querySelectorAll(".card");
+class MemoryGame {
+  constructor() {
+    let isFlipped = false;
+  }
 
-let isFlipped = false;
-
-card.forEach((c) => {
-  c.addEventListener("click", () => {
-    if (!isFlipped) {
-      c.classList.add("open");
-      isFlipped = !isFlipped;
+  flipCard(card) {
+    if (!this.isFlipped) {
+      card.classList.add("open");
+      this.isFlipped = true;
     } else {
-      c.classList.remove("open");
-      isFlipped = !isFlipped;
+      card.classList.remove("open");
+      this.isFlipped = false;
     }
-  });
-});
+    this.isFlipped = !this.isFlipped;
+    console.log(this.isFlipped);
+  }
+}
+
+const game = new MemoryGame();
+let card = document.querySelectorAll(".card");
+
+card.forEach((card) =>
+  card.addEventListener("click", function () {
+    game.flipCard(card);
+  })
+);
