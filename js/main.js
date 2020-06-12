@@ -11,8 +11,6 @@ class MemoryGame {
       card.classList.remove("open");
       this.isFlipped = false;
     }
-    this.isFlipped = !this.isFlipped;
-    console.log(this.isFlipped);
   }
 }
 
