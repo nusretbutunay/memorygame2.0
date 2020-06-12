@@ -1,112 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/e495230f5d.js"
-      crossorigin="anonymous"
-    ></script>
 
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Memory Game 2.0</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/e495230f5d.js" crossorigin="anonymous"></script>
 
-  <body>
-    <div class="wrapper">
-      <nav class="nav">
-        <ul class="nav-links">
-          <li class="nav-item"><a href="#" class="nav-link">New Game</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
+  <link rel="stylesheet" href="css/main.css" />
+  <title>Memory Game 2.0</title>
+</head>
 
-      <div class="game-container">
-        <div class="cards">
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-paw fa-4x"></i></div>
-          </div>
+<body>
+  <div class="wrapper">
+    <nav class="nav">
+      <ul class="nav-links">
+        <li class="nav-item"><a href="#" class="nav-link">New Game</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
 
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-otter fa-4x"></i></div>
-          </div>
+    <div class="game-container">
+      <div class="cards">
+        <div class="card" data-index="1">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-paw fa-4x"></i></div>
+        </div>
 
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-hippo fa-4x"></i></div>
-          </div>
+        <div class="card" data-index="2">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-otter fa-4x"></i></div>
+        </div>
 
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-dog fa-4x"></i></div>
-          </div>
+        <div class="card" data-index="3">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-hippo fa-4x"></i></div>
+        </div>
 
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-spider fa-4x"></i></div>
-          </div>
+        <div class="card" data-index="4">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-dog fa-4x"></i></div>
+        </div>
 
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-horse-head fa-4x"></i></div>
-          </div>
+        <div class="card" data-index="5">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-spider fa-4x"></i></div>
+        </div>
 
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-dragon fa-4x"></i></div>
-          </div>
+        <div class="card" data-index="6">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-horse-head fa-4x"></i></div>
+        </div>
 
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-dove fa-4x"></i></div>
-          </div>
+        <div class="card" data-index="7">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-dragon fa-4x"></i></div>
+        </div>
 
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-paw fa-4x"></i></div>
-          </div>
+        <div class="card" data-index="8">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-dove fa-4x"></i></div>
+        </div>
 
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-otter fa-4x"></i></div>
-          </div>
+        <div class="card" data-index="1">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-paw fa-4x"></i></div>
+        </div>
 
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-hippo fa-4x"></i></div>
-          </div>
+        <div class="card" data-index="2">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-otter fa-4x"></i></div>
+        </div>
 
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-dog fa-4x"></i></div>
-          </div>
+        <div class="card" data-index="3">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-hippo fa-4x"></i></div>
+        </div>
 
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-spider fa-4x"></i></div>
-          </div>
+        <div class="card" data-index="4">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-dog fa-4x"></i></div>
+        </div>
 
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-horse-head fa-4x"></i></div>
-          </div>
+        <div class="card" data-index="5">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-spider fa-4x"></i></div>
+        </div>
 
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-dragon fa-4x"></i></div>
-          </div>
+        <div class="card" data-index="6">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-horse-head fa-4x"></i></div>
+        </div>
 
-          <div class="card">
-            <div class="card-front"><img src="img/qm.png" /></div>
-            <div class="card-back"><i class="fas fa-dove fa-4x"></i></div>
-          </div>
+        <div class="card" data-index="7">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-dragon fa-4x"></i></div>
+        </div>
+
+        <div class="card" data-index="8">
+          <div class="card-front"><img src="img/qm.png" /></div>
+          <div class="card-back"><i class="fas fa-dove fa-4x"></i></div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
